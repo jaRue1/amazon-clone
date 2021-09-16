@@ -8,19 +8,23 @@ function App() {
     //BEM naming convention for styling
     <Router>
       <div className="app">
+      <Header />
+
         <Switch>
+        <Route exact path="/login">
+            <h2>Login Page</h2>
+          </Route>
           
           <Route exact path="/checkout">
-            <Header />
             <Checkout />
           </Route>
 
           <Route path="/">
-            <Header />
             <Home />
           </Route>
 
         </Switch>
+        
       </div>
     </Router>
   )
