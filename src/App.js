@@ -1,6 +1,7 @@
 import "./App.css"
 import Header from "./Header"
 import Home from "./Home"
+import Login from "./Login"
 import Checkout from "./Checkout"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 function App() {
@@ -8,18 +9,20 @@ function App() {
     //BEM naming convention for styling
     <Router>
       <div className="app">
-      <Header />
+      
 
         <Switch>
         <Route exact path="/login">
-            <h2>Login Page</h2>
+            <Login />
           </Route>
           
           <Route exact path="/checkout">
+            <Header />
             <Checkout />
           </Route>
 
           <Route path="/">
+            <Header />
             <Home />
           </Route>
 
