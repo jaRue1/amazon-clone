@@ -4,6 +4,7 @@ import Header from "./Header"
 import Home from "./Home"
 import Login from "./Login"
 import Checkout from "./Checkout"
+import Payment from "./Payment"
 import { auth } from "./firebase"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { useStateValue } from "./StateProvider"
@@ -41,6 +42,11 @@ function App() {
           <Route exact path="/checkout">
             <Header />
             <Checkout />
+          </Route>
+
+          <Route exact path="/payment">
+            <Header />
+            <Payment/>
           </Route>
 
           <Route path="/">
