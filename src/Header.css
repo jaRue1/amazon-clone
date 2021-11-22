@@ -66,3 +66,16 @@
   margin-right: 10px;
   color: white;
 }
+
+@media (max-width: 768px){
+  .header{
+    font-size: 1px;
+  }
+  .header__option > span {
+    font-size: 9px;
+    text-decoration: none;
+  }
+  .header__search{
+    display: none;
+  }
+}

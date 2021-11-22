@@ -89,14 +89,13 @@ function Payment() {
             <h3>Delivery Address</h3>
           </div>
           <div className="payment__address">
-            <p>{!user ? "Guest" : user.email}</p>
-            <p>123 Abc Lane </p>
-            <p>Code Valley, FL</p>
+            <p>{!user ? "Guest, " : user.email + ","}</p> 
+            <p> 123 Abc Lane Code Valley, FL </p>
           </div>
         </div>
         {/* Payment Section - Review Items */}
         <div className="payment__section">
-          <div className="payment__title">
+          <div className="payment__title review__section">
             <h3>Review Items and Delivery</h3>
           </div>
           <div className="payment__items">

@@ -42,3 +42,17 @@
   border-color: #000000;
   color: black;
 }
+
+@media (max-width: 768px) {
+  .payment__title > h3{
+    font-size: 13px;
+  }
+  .payment__address{
+    display: flex;
+  }
+  .review__section > H3{
+    display: flex;
+    flex-direction: row;
+    color: red;
+  }
+}

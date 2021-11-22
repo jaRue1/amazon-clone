@@ -15,3 +15,11 @@
   font-weight: 500;
   text-align: right;
 }
+@media (max-width: 768px){
+  .order > h2{
+    font-size: 20px;
+  }
+  .order__id{
+    top: 10px;
+  }
+}

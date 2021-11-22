@@ -5,7 +5,7 @@
   justify-content: flex-end;
   margin: 10px;
   padding: 20px;
-  width: 100%;
+  width: 100%; 
   max-height: 400px;
   min-width: 100px;
   background-color: white;
@@ -35,4 +35,12 @@
 .product__info {
   height: 100px;
   margin-bottom: 15px;
+}
+
+@media (max-width: 768px){
+  .product{
+    margin: 5px;
+    padding: 10px;
+    width: 93% !important ;
+  }
 }
